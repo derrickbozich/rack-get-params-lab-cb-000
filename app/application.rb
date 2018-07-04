@@ -47,6 +47,7 @@ class Application
     if @@items.include?(search_term)
       # binding.pry
        @@items << search_term
+       return "added #{search_term}"
     else
       return "We don't have that item"
     end
