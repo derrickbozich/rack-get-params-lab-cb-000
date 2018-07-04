@@ -45,9 +45,9 @@ class Application
 
   def handle_add(search_term)
     if @@items.include?(search_term)
-    
+
        @@items << search_term
-         # binding.pry
+         binding.pry
        return "added #{search_term}"
     else
       return "We don't have that item"
